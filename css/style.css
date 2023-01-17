@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
+.body {
+    background-color: hsla(216, 10%, 19%, 0.11);
+    max-width: 1000px;
+    margin: auto;
+    font-family: "Lato", sans-serif;
+    line-height: 1.5;
+}
+
+.body--darkTheme {
+    background-color: hsl(196deg 14% 23% / 64%);
+}
+
+.header__title {
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 80%);
+    text-align: center;
+}

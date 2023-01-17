@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ł.Waniewski - początek</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/article.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <script defer src="JS/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body js-body">
+    <header class="header">
+        <h1 class="header__title" id="góra">Łukasz Waniewski</h1>
+    </header>
+    <nav class="navigation">
+        <a class="navigation__link" href="#o-mnie">O mnie</a>
+        <a class="navigation__link" href="#zainteresowania">Zainteresowania</a>
+        <a class="navigation__link" href="#stopka">Kontakt</a>
+        <p>
+            <button class="navigation__button js-button">Włącz<span class="js-themeName"> ciemne</span> tło</button>
+        </p>
+    </nav>
+    <main>
+        <article class="article" id="o-mnie">
+            <h2 class="article__title">Kilka słów o mnie</h2>
+            <div class="article__content">
+                <img class="article__image js-image" width=300 src="images/IMG20221018100828.jpg" alt="ŁukaszWaniewski">
+                <p>
+                    <button class="article__button js-imageButton">
+                        <span class="js-changeText">
+                            Usuń
+                        </span>
+                        zdjęcie
+                    </button>
+                </p>
+                <p>
+                    Nazywam się Łukasz Waniewski.
+                    <br>W następnym roku kończę <strong class="article__information">32lata</strong>
+                    <i>(chociaż mój wygląd na to nie wskazuję).</i>
+                    Mieszkam na terenie zielonych płuc Polski,<em> na podlasiu.</em>
+                    Zawodowo pracuję jako konstruktor.
+                    <br><b>W pracy głównie zajmuję się modelowaniem 3D przy użyciu programów graficznych typu CAD.</b>
+                </p>
+            </div>
+        </article>
+        <article id="zainteresowania">
+            <h2 class="article__title">Zainteresowania</h2>
+            <ul class="article__list">
+                <li class="article__listItem--travel"> Podróże z rodziną</li>
+                <li class="article__listItem--bike"> Jazda na rowerze</li>
+                <li class="article__listItem--diy"> Budownictwo i majsterkowanie</li>
+            </ul>
+            <p>
+                <b>Postaram się nieco przybliżyć ostatni punkt z moich zaintersowań.</b>
+                W możliwie wolnym czasie lubię własnoręcznie coś wykonać, najczęściej pracuję z drewnem.
+                Przy takich pracach najbardziej zadawalający jest efek końcowy, a drewno jest na tyle wdzięcznym
+                materiałem, że łatwo poddaje się obróbce.
+
+                Do moich prac warsztatowych potrzebuję odpowiedniego sprzętu, nie byłbym sobą jakbym przed zakupem nie
+                przeanalizował, nie porównał oraz nie przeszukał połowy internetu, w celu odnalezienia <i>perełki.</i>
+                Ostatnim moim zakupem była pilarka tarczowa do drewna.
+                Poniżej przedstawiam tabelę porównawczą kilu modeli.
+            </p>
+            <div class="scrollableContainer">
+                <table class="table">
+                    <caption class="table__caption">Porównanie pilarek tarczowych przed zakupem</caption>
+                    <thead>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="col">Marka</th>
+                            <th class="table__cell table__cell--header" scope="col">Moc [W]</th>
+                            <th class="table__cell table__cell--header" scope="col">Prędkość obrotowa [obr./min]</th>
+                            <th class="table__cell table__cell--header" scope="col">Waga [kg]</th>
+                            <th class="table__cell table__cell--header" scope="col">Cena [zł]</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Hikoki</th>
+                            <td class="table__cell">1050</td>
+                            <td class="table__cell">5550</td>
+                            <td class="table__cell">3,4</td>
+                            <td class="table__cell">399</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Makita</th>
+                            <td class="table__cell">1200</td>
+                            <td class="table__cell">5200</td>
+                            <td class="table__cell">3,8</td>
+                            <td class="table__cell">440</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Stanley</th>
+                            <td class="table__cell">1650</td>
+                            <td class="table__cell">5500</td>
+                            <td class="table__cell">4,1</td>
+                            <td class="table__cell">440</td>
+                        </tr>
+                        <tr class="table__row">
+                            <th class="table__cell table__cell--header" scope="row">Dewalt</th>
+                            <td class="table__cell">1350</td>
+                            <td class="table__cell">5500</td>
+                            <td class="table__cell">3,7</td>
+                            <td class="table__cell">544</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </article>
+    </main>
+    <footer id="stopka">
+        <nav>
+            <h3 class="footer__title">Kontakt</h3>
+            <p>
+                Możesz skontatkować się ze mną pod adresem:
+            </p>
+            <ul>
+                <li><a href="https://example.com">Website</a></li>
+                <li><a href="mailto:l.wan@example.com">Email</a></li>
+                <li><a href="tel:+123456789">Phone</a></li>
+            </ul>
+        </nav>
+        <div class="footer__div">
+            <a class="footer__button" href="#góra">Powrót na górę</a>
+        </div>
+        <p class="footer__information">Design by Łukasz Waniewski 2022</p>
+    </footer>
+</body>
+
+</html>

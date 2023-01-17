@@ -1,0 +1,65 @@
+.article__title {
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 80%);
+    text-align: center;
+}
+
+.article__image {
+    max-width: 100%;
+    padding: 5px;
+    margin: 2px 2px;
+    display: inline-block;
+    border-radius: 20px;
+    border: 1px solid hsla(0, 0%, 4%, 0.651);
+}
+
+.article__content {
+    padding: 2px;
+    text-align: center;
+}
+
+.article__button {
+    background-color: hsl(0deg 0% 4% / 65%);
+    color: hsl(0, 0%, 98%);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid hsl(0deg 0% 80%);
+    margin: auto;
+}
+
+.article__information {
+    color: hsl(251, 100%, 50%);
+}
+
+.article__list {
+    padding: 5px;
+    text-align: center;
+}
+
+.article__listItem--travel {
+    color: hsl(0, 0%, 98%);
+    background: hsla(0, 0%, 38%, 0.87);
+    margin: 10px 0;
+    list-style-type: "🚗";
+    list-style-position: inside;
+}
+
+.article__listItem--bike {
+    color: hsl(0, 0%, 98%);
+    background: hsla(0, 0%, 38%, 0.87);
+    margin: 10px 0;
+    list-style-type: "🚲";
+    list-style-position: inside;
+}
+
+.article__listItem--diy {
+    color: hsl(0, 0%, 98%);
+    background: hsla(0, 0%, 38%, 0.87);
+    margin: 10px 0;
+    list-style-type: "🔨";
+    list-style-position: inside;
+}
+
+.hidden {
+    display: none;
+}

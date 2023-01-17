@@ -1,0 +1,27 @@
+.footer__title {
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(0, 0%, 80%);
+    text-align: center;
+}
+
+.footer__information {
+    text-align: center;
+    background: hsl(0, 0%, 80%);
+    padding: 5px;
+    font-size: small;
+    color: hsl(0, 0%, 0%);
+}
+
+.footer__div {
+    text-align: center;
+}
+
+.footer__button {
+    background-color: hsl(0deg 0% 4% / 65%);
+    color: hsl(0, 0%, 98%);
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid hsl(0deg 0% 80%);
+    text-decoration: none;
+    font-size: smaller;
+}

@@ -1,0 +1,40 @@
+.scrollableContainer {
+    overflow-x: auto;
+}
+
+.table__cell {
+    border: 1px solid hsl(0, 0%, 80%);
+    padding: 15px;
+    text-align: center;
+    width: 25%;
+    vertical-align: middle;
+}
+
+.table__caption {
+    caption-side: top;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: large;
+    background-color: hsl(0deg 0% 4% / 65%);
+    color: hsl(0, 0%, 98%);
+}
+
+.table__cell--header {
+    background-color: hsl(0deg 0% 4% / 65%);
+    color: hsl(0, 0%, 98%);
+    border: 1px black;
+    width: 25%;
+}
+
+.table__row:nth-child(even) {
+    background: hsl(0, 0%, 80%);
+}
+
+.table__cell:hover {
+    background: hsl(240, 73%, 75%);
+}
+
+.table__table {
+    overflow-x: auto;
+}
