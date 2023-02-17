@@ -1,26 +1,41 @@
-console.log("Cześć!");
+{
+    const welcome = () => {
+        console.log("Cześć! Witam wszystkich odwiedzających moją stronę");
+    }
 
-let buttonElement = document.querySelector(".js-button");
-let bodyElement = document.querySelector(".js-body");
-let themeNameElement = document.querySelector(".js-themeName")
+    const toggleBackround = () => {
 
-buttonElement.addEventListener("click", () => {
-    bodyElement.classList.toggle("body--darkTheme");
+        const bodyElement = document.querySelector(".js-body");
+        const themeNameElement = document.querySelector(".js-themeName")
 
-    themeNameElement.innerText = bodyElement.classList.contains("body--darkTheme")
-        ? " jasne"
-        : " ciemne";
-});
+        bodyElement.classList.toggle("body--darkTheme");
+        themeNameElement.innerText = bodyElement.classList.contains("body--darkTheme")
+            ? " jasne"
+            : " ciemne";
+    };
 
-let imageButton = document.querySelector(".js-imageButton");
-let imageElement = document.querySelector(".js-image")
-let changeTextElement = document.querySelector(".js-changeText")
+    const toggleImage = () => {
 
-imageButton.addEventListener("click", () => {
-    imageElement.classList.toggle("hidden");
+        const imageElement = document.querySelector(".js-image")
+        const changeTextElement = document.querySelector(".js-changeText")
 
-    changeTextElement.innerText = imageElement.classList.contains("hidden")
-        ? "Pokaż"
-        : "Usuń";
+        imageElement.classList.toggle("hidden");
+        changeTextElement.innerText = imageElement.classList.contains("hidden")
+            ? "Pokaż"
+            : "Usuń";
+    };
 
-});
+    const init = () => {
+        const buttonElement = document.querySelector(".js-button");
+        buttonElement.addEventListener("click", toggleBackround);
+
+        const imageButton = document.querySelector(".js-imageButton");
+        imageButton.addEventListener("click", toggleImage);
+
+    }
+
+    welcome();
+
+    init();
+
+}
